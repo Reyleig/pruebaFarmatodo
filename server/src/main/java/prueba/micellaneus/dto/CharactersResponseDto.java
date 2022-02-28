@@ -2,11 +2,14 @@ package prueba.micellaneus.dto;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
-class charactersDto {
+
+public class CharactersResponseDto {
     private String name;
     private String species;
     private String gender;
     private String image;
-    private locationDto location;
+    private LocationResponseDto location;
 }

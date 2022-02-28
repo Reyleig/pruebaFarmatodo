@@ -5,14 +5,12 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class EpisodeDto {
-
+public class LocationDto {
     private int id;
     private String name;
-    private String air_date;
-    private String episode;
-    private List<String> characters;
+    private String type;
+    private String dimension;
+    private List<String> residents;
     private String url;
     private String created;
-
 }
