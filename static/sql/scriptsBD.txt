@@ -1,0 +1,29 @@
+CREATE DATABASE postgres
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1;
+
+create table rol
+(
+    id_rol serial
+        constraint rol_pk
+            primary key,
+    nombre varchar not null
+);
+
+INSERT INTO rol (id_rol, nombre) VALUES (1, 'ADMINISTRADOR');
+INSERT INTO rol (id_rol, nombre) VALUES (2, 'AUDITOR');
+INSERT INTO rol (id_rol, nombre) VALUES (3, 'AUXILIAR');
+
+create table usuario
+(
+    id_usuario serial
+        constraint usuario_pk
+            primary key,
+    id_rol     integer
+        constraint id_rol
+            references rol,
+    nombre     varchar not null,
+    activo     char    not null
+);

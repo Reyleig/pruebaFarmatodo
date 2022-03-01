@@ -1,9 +1,6 @@
 package prueba.service;
 
-import prueba.micellaneus.dto.EpisodeDto;
-import prueba.micellaneus.dto.GenericDto;
-import prueba.micellaneus.dto.ResponseDto;
-import prueba.micellaneus.dto.UserDto;
+import prueba.micellaneus.dto.*;
 
 import java.util.List;
 
@@ -12,5 +9,7 @@ public interface PruebaService {
 
 
     ResponseDto getDataEpisode(int idEpisode);
+    Numbers happyNumber(NumberListDto list);
+    SumNumber sumNaturalNumbers(int idEpisode);
 
 }

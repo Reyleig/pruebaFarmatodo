@@ -5,6 +5,7 @@ public enum ValidationMessageEnum {
     USER_ALREADY_EXIST("UserAlreadyExists.code", "UserAlreadyExists.message", "UserAlreadyExists.recomen"),
     ERROR_CREATE_USER("ErrorCreateUser.code", "ErrorCreateUser.message", "ErrorCreateUser.recomen"),
     ERROR_GET_EPISODE("ErrorGetEpisode.code", "ErrorGetEpisode.message", "ErrorGetEpisode.recomen"),
+    ERROR_GET_CHARACTER("ErrorGetEpisode.code", "ErrorGetEpisode.message", "ErrorGetEpisode.recomen"),
     ERROR_UPDATE_USER("ErrorUpdateUser.code", "ErrorUpdateUser.message", "ErrorUpdateUser.recomen"),
     ERROR_GET_USERS("ErrorGetUser.code", "ErrorGetUser.message", "ErrorGetUser.recomen"),
     ERROR_GET_ALL_USERS("ErrorGetAllUser.code", "ErrorGetAllUser.message", "ErrorGetAllUser.recomen"),
